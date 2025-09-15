@@ -1,0 +1,20 @@
+{
+  "dependencies": {
+    "@google-cloud/firestore": "^7.11.3",
+    "cors": "^2.8.5",
+    "dotenv": "^17.2.2",
+    "express": "^5.1.0",
+    "firebase-admin": "^13.5.0",
+    "zod": "^4.1.8"
+  },
+  "devDependencies": {
+    "nodemon": "^3.1.10"
+  },
+  "scripts": {
+    "dev": "nodemon functions/src/server.js",
+    "start": "node functions/src/server.js",
+    "fb:build": "npm --prefix functions run build",
+    "fb:deploy": "firebase deploy --only functions:api",
+    "fb:push": "npm run fb:build && npm run fb:deploy"
+  }
+}

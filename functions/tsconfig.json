@@ -1,0 +1,21 @@
+{
+  "compilerOptions": {
+    "module": "NodeNext",
+    "esModuleInterop": true,
+    "moduleResolution": "NodeNext",
+    "noImplicitReturns": true,
+    "noUnusedLocals": true,
+    "rootDir": "src",
+    "outDir": "lib",
+    "sourceMap": true,
+    "resolveJsonModule": true,
+    "strict": true,
+    "target": "ES2022",
+    "types" : ["node"],
+    "baseUrl": "src",
+    "paths": { "@/*": ["*"] },
+    "skipLibCheck": true
+  },
+  "compileOnSave": true,
+  "include": ["src", "src/types"] // in types the env helper to avoid using process.env
+}
